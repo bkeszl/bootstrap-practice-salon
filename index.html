@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Salon</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Keszler Barnabas">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar with a few modifications from the website -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Salon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item active">
+            <a class="nav-link" href="#1">Our Services <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#2">Make an Appointment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#3">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#4">About Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <!-- Container for the main section of the page -->
+    <div class="container col-7 bg-none">
+      <!-- Image at the top of the main section -->
+      <img src="img/mainbanner1.jpg" class="img-fluid width: 100%  height: auto" alt="Responsive image">
+      <!-- Cards section for services -->
+      <h3 class="text-center m-5" id="1">Our Services</h3>
+      <div class="row">
+        <div class="card col  m-3 xp" style="padding:0px;">
+          <div class="card-body">
+            <h5 class="card-title" >Styling
+              <img id="p1" class="float-right" src="img/haircut-icon.svg" alt="Hair cut by Anton Gajdosik from the Noun Project">
+            </h5>
+          </div>
+          <img class="card-img-bottom xd" src="img/styling.png" alt="Card image cap">
+        </div>
+        <div class="card col m-3" style="padding:0px;">
+          <div class="card-body">
+            <h5 class="card-title">Coloring
+              <img id="p1" class="float-right" src="img/haircut-icon.svg" alt="Hair cut by Anton Gajdosik from the Noun Project">
+            </h5>
+          </div>
+          <img class="card-img-bottom xd" src="img/coloring.jpg" alt="Card image cap">
+        </div>
+        <div class="card col m-3" style="padding:0px;">
+          <div class="card-body">
+            <h5 class="card-title">Haircuts
+              <img id="p1" class="float-right" src="img/haircut-icon.svg" alt="Hair cut by Anton Gajdosik from the Noun Project">
+            </h5>
+          </div>
+          <img class="card-img-bottom xd" src="img/haircuts.jpg" alt="Card image cap">
+        </div>
+      </div>
+      <!-- Forms section for appointment making -->
+      <h3 class="text-center m-5" id="2">Make an Appointment</h3>
+      <div class="row">
+        <form class="col-6">
+         <div class="form-group">
+           <input type="text" class="form-control" placeholder="First and Last Name">
+         </div>
+         <div class="form-group">
+           <input type="text" class="form-control" placeholder="Phone Number">
+         </div>
+         <div class="form-group">
+           <input type="text" class="form-control" placeholder="Date">
+         </div>
+         <div class="form-group">
+           <input type="text"  id="oi" class="form-control" placeholder="Other Info">
+         </div>
+         <div class="form-check">
+           <input type="checkbox" class="form-check-input" id="exampleCheck1">
+           <label class="form-check-label" for="exampleCheck1">Checkbox cuz I Want It</label>
+         </div>
+         <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Send</button>
+        </form>
+        <!-- Modal to feedback appointment creation. -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thank You for Making an Appointment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Our colleagues will get in touch with you if there is a change in the schedule.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Table section to make appointments -->
+        <table class="table table-bordered col">
+          <thead>
+            <tr class="thead-light">
+              <th scope="col" style="width: 40%">Day</th>
+              <th scope="col" style="width: 60%">Working Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>8:30 - 16:00</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>8:30 - 16:00</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>10:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>10:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>12:30 - 16:00</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>12:30 - 16:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- FAQ -->
+      <h3 class="text-center m-5" id="3">F.A.Q</h3>
+      <div class="row">
+        <div id="accordion" class="col">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Do you have gift certificates?
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Yes, you can purchase them in the salon or online.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Can I bring my pet along?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Only small pets and service animals are accepted inside the salon, however there is a waiting area otside the salon for pets that you dont mind leaving without supervision.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  What awards did you recieve so far?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Nr.1 top shagger.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filler"></div>
+      <div class="vonal row"></div>
+      <div class="filler"></div>
+      <div class="row" id="4">
+        <div class="container col">
+          <p>Contact<br><br>Some Thing<br>Some Thing Again<br>Another Thing</p>
+        </div>
+        <img class="col" src="img/haircut-icon.svg" alt="Hair cut by Anton Gajdosik from the Noun Project">
+        <div class="container col text-right">
+          <p>Navigation<br><br>Ide<br>Oda<br>Amoda</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
